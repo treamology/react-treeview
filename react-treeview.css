@@ -5,11 +5,12 @@
 
 .tree-view_item {
   /* immediate child of .tree-view, for styling convenience */
+  cursor: pointer;
 }
 
 /* style for the children nodes container */
 .tree-view_children {
-  margin-left: 16px;
+  margin-left: 7px;
 }
 
 .tree-view_children-collapsed {
@@ -17,7 +18,6 @@
 }
 
 .tree-view_arrow {
-  cursor: pointer;
   margin-right: 6px;
   display: inline-block;
   -webkit-user-select: none;
@@ -27,7 +27,8 @@
 }
 
 .tree-view_arrow:after {
-  content: '▾';
+  content: url("/assets/svg/arrow.svg");
+  /*background-image: 'assets/svg/arrow.svg'*/
 }
 
 /* rotate the triangle to close it */
